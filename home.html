@@ -12,27 +12,31 @@
     <title>Title</title>
     <link href="styles.css" rel="stylesheet"/>
     <style>
-        div {
-            height: 200px;
-            width: 200px;
-            border: 2px ;
+        body {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            flex-direction: column;
-            padding: ;
+            height: 100vh;
         }
-        span {
-            background-color: aquamarine;
+        @keyframes superSexyCoinFlip {
+            0% {
+                transform: rotateX(0deg);
+            }
+            50% {
+                transform: rotateX(360deg) translateY(100px);
+            }
+            100% {
+                transform: rotateX(0deg);
+            }
+        }
+        img {
+            border: 1px solid black;
+            border-radius: 50%;
+            animation: superSexyCoinFlip 3s ease-in-out infinite;
         }
     </style>
 </head>
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <img src="img/img.jpg" alt="">
 </body>
 </html>
