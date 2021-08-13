@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+header {
+    padding: 40px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffbd11;
+}
+.header__title {
+    font-size: 24px;
+    font-weight: 600;
+}
+.searchBox {
+    background-color: white;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 15px;
+    box-shadow: 1px 5px rgba(121, 121, 121, 0.2);
+}
+.searchBox__text {
+    border: none;
+}
+.searchBox__text::placeholder {
+    color: rgba(121, 121, 121, 0.5);
+}
+.searchBox__text:focus {
+    outline: none;
+}
+main {
+    margin: 10px 0px;
+}
+.main__title {
+    display: flex;
+}
+.main__poster {
+    width: 200px;
+    height: 300px;
+}
+.sub__title {
+    display: flex;
+    overflow: hidden;
+}
+.sub__poster {
+    margin: 5px 10px;
+    width: 100px;
+    height: 150px;
+}
